@@ -1,0 +1,16 @@
+
+<html>
+<head>
+    <title>Title</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+<!-- 定义HTML表单，上传文件必须使用POST提交模式，同时需要通过enctype封装表单 -->
+<form action="upload_do.jsp" method="post" enctype="multipart/form-data">
+    姓名：<input type="text" name="name"><br>		<!-- 文本数据 -->
+    照片：<input type="file" name="photo"><br>		<!-- 二进制数据 -->
+    <button type="submit">提交</button><button type="reset">重置</button>
+</form>
+
+</body>
+</html>
